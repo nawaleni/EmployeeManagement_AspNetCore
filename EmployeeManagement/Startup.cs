@@ -34,6 +34,8 @@ namespace EmployeeManagement
             services.AddIdentity<IdentityUser, IdentityRole>()
                     .AddEntityFrameworkStores<AppDbContext>();
 
+            
+
             // for overriding orginal password rules
             services.Configure<IdentityOptions>(options =>
             {
